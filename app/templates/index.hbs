@@ -1,13 +1,14 @@
-<div id="searchBar" class="{{if userText 'searchTop'}}">
-  <img id="redditImg" src="/img/reddit_guy.png" alt="reddit icon">
-  <h1>Choose a subreddit</h1>
-  {{input class="input-value" value=userText key-press=(action 'get-posts')}}
-</div>
+<div class="search-and-links">
+  <div id="searchBar" class="{{if userText 'search-top'}}">
+    <img id="redditImg" src="/img/reddit_guy.png" alt="reddit icon">
+    <h1>Choose a subreddit</h1>
+    {{input class="input-value" value=userText key-press=(action 'get-posts')}}
+  </div>
 
-{{helloMessage}}
-<ul>
-  {{#each subredditPosts as |post|}}
-  <li><a href={{post.url}} target="_blank">{{post.title}}</a></li>
-  {{/each}}
-</ul>
+  <ul>
+    {{#each subredditPosts as |post|}}
+    <li><a href={{post.url}} target="_blank">{{post.title}}</a></li>
+    {{/each}}
+  </ul>
+</div>
 
