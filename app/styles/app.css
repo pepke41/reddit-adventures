@@ -24,3 +24,7 @@ h1 {
   margin-top: 0;
 }
 
+#searchBar.searchTop {
+  top: 0;
+  transform: translateX(-50%);
+}
