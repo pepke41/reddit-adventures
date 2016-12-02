@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'reddit-adventures',
     environment: environment,
-    rootURL: '/',
+    rootURL: '/reddit-adventures/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
